@@ -1,0 +1,812 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto-regular;
+    line-height: 35px;
+}
+
+.contacto_footer {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.header {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    background-size: cover;
+    border-bottom: #149968;
+    position: fixed;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    color: white;
+}
+
+.contenedorLogo {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #149968;
+    background-size: cover;
+    padding-top: 5px;
+}
+
+.navbarNuestro {
+    height: 90%;
+    padding: 10px 0;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-color: #149968;
+    padding-top: 5px;
+    width: 100%;
+    overflow-x: hidden;
+    color: white;
+}
+
+.logo_navbar {
+    width: 90%;
+    max-height: 90%;
+    border-radius: 100%;
+    border: solid 1px white;
+}
+
+.secciones {
+    color: white;
+}
+
+.diapositivaInicio {
+    width: 100%;
+    background-color: #149968;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+    align-items: center;
+    padding-top: 9%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+}
+
+.contenedorTextoPrincipal {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contenedorTituloConFotoSubtitulo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contenedorTituloConFoto{
+    display: flex;
+    gap: 20px;
+}
+
+.tituloHighlands {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 110px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.logoPortada{
+    width: 150px;
+    border-radius: 100%;
+    border: solid 1px white;
+}
+
+.subHighlands {
+    font-family: roboto-regular;
+    font-weight: 500;
+    font-size: 25px;
+    color: aliceblue;
+    font-family: 'Dancing Script', cursive;
+}
+
+.tituloHighlandsTexto {
+    color: aliceblue;
+    font-family: roboto-regular;
+    line-height: 35px;
+    font-size: 18px;
+    width: 100%;
+}
+
+
+.listadoDiapositivaInicio {
+    color: aliceblue;
+}
+
+.listadoDiapositivaInicioItem {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 17px;
+}
+
+.contenedorBotonContactanosPrincipal {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contenedorBotonContactanosPrincipal:hover {
+    background-color: aquamarine;
+    color: black;
+}
+
+.botonContactanosPrincipal {
+    width: 100%;
+    color: black;
+    font-size: 17px;
+    font-weight: 800;
+    text-transform: none;
+}
+
+.botonContactanosPrincipal:hover {
+    color: black;
+}
+
+.contenedorFotoComputadora {
+    width: 50%;
+    display: flex;
+    align-self: flex-end;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.fotoComputadora {
+    max-width: 100%;
+    width: 100%;
+    border: solid 2px #149968;
+}
+
+.diapositivaQueHacemos {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 4% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloQueHacemos {
+    width: 80%;
+    border: none;
+    border-top: 2px solid #149968;
+    opacity: 1;
+}
+
+.contenedorRubros {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 20%);
+    column-gap: 10%;
+    row-gap: 150px;
+    justify-content: center;
+    padding: 9% 0;
+}
+
+.rubro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 8%;
+}
+
+.fotoRubro {
+    max-width: 30%;
+    width: 30%;
+}
+
+.infoRubro {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.diapositivaLogros {
+    background-color: #149968;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding: 5% 0;
+}
+
+.tituloLogros {
+    color: black;
+    font-family: roboto;
+}
+
+.contenedorImgEstudiantes {
+    display: flex;
+    max-width: 45%;
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px #149968;
+}
+
+.imgEstudiantes {
+    width: 90%;
+    border: solid 3px #149968;
+    border-radius: 50px;
+}
+
+.seccionEslogan {
+    position: relative;
+    width: 100%;
+    background-color: #149968;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.separadores {
+    width: 5px;
+    height: 50%;
+    color: black;
+    background-color: black;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.tituloTestimonio {
+    font-size: 35px;
+    color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    font-family: roboto-regular;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+}
+
+.whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 16px;
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+    .whatsapp-icon {
+        margin-top: 10px;
+    }
+
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+}
+
+a:hover {
+    color: rgb(136, 221, 178);
+}
+
+
+.contenedorLogros {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    max-width: 45%;
+}
+
+.cuadrado {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2);
+    color: black;
+    padding-top: 10px;
+    gap: 5px;
+    border-radius: 100px;
+}
+
+.simbolo {
+    position: relative;
+    color: #149968;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-bottom: 0;
+}
+
+.info {
+    position: relative;
+    color: black;
+    font-size: 20px;
+    opacity: 0.8;
+    width: 80%;
+}
+
+.seccionTestimonios {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.cardsTestimonio {
+    display: flex;
+    max-width: 80%;
+    gap: 100px;
+}
+
+.cardTestimonio {
+    width: 250px;
+    height: 350px;
+    perspective: 1000px;
+    margin: 50px auto;
+
+}
+
+.cardTestimonio-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+
+}
+
+.cardTestimonio:hover .cardTestimonio-inner {
+    transform: rotateY(180deg);
+}
+
+.cardTestimonio-front,
+.cardTestimonio-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    border-radius: 5px;
+    font-family: roboto-regular;
+    font-weight: 500;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.cardTestimonio-front {
+    background-color: #149968;
+}
+
+.cardTestimonio-back {
+    background-color: #a9c7bc;
+    transform: rotateY(180deg);
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    padding: 10px;
+    width: 100%;
+}
+
+
+.fotoTestimonio {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+footer {
+    background-color: #149968;
+    color: black;
+}
+
+.contenido_footer {
+    display: flex;
+    background-color: #149968;
+    background-size: cover;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    width: 100%;
+    gap: 70px;
+    padding: 2% 0;
+}
+
+.seccionFooter {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titulosFooter {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo_footer {
+    height: 25%;
+    width: 50%;
+    margin: 10px 0;
+    border-radius: 100%;
+    border: solid 1px white;
+}
+
+.linksFooter {
+    color: black;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.redes_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.telefono_footer {
+    margin-bottom: 0;
+}
+
+.whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 16px;
+}
+
+.datosPersona{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/*    Tablets/Compus chicas    */
+@media screen and (max-width: 1500px) {
+    
+    .tituloHighlands {
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+        font-size: 70px;
+        color: aliceblue;
+    }
+
+    .contenedorTextoPrincipal {
+        width: 90%;
+        margin-top: 50px;
+        padding-left: 50px;
+    }
+
+    .contenedorFotoComputadora {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0 0 0;
+        margin: 20px 0 20px 0;
+    }
+
+    .logoPortada{
+        width: 90px;
+    }
+
+    .tituloHighlandsTexto{
+        font-size: 16px;
+    }
+
+    .contenedorRubros{
+        padding: 9% 50px;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 50px;
+    }
+
+    .infoRubro{
+        font-size: 16px;
+    }
+
+    .cuadrado{
+        width: 70%;
+        max-width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 1300px) {
+    
+    .cuadrado{
+        width: 70%;
+        max-width: 70%;
+    }
+
+    .simbolo{
+        font-size: 40px;
+    }
+
+    .info{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .card{
+        width: 300px;
+        height: auto;
+    }
+
+    .datosPersona{
+        font-size: 15px;
+    }
+
+    .cardsTestimonio{
+        max-width: 90%;
+    }
+}
+
+/* for mobile */
+@media screen and (max-width: 990px) {
+    .whatsapp-icon {
+        margin-top: 10px;
+    }
+
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+
+    .navbarNuestro {
+        padding: 0 0 0 0;
+        color: white;
+    }
+
+    .navColor {
+        background-size: cover;
+        background-color: #149968;
+        overflow-x: hidden;
+        color: white;
+    }
+
+    .navbar-inicio{
+        color: white;
+    }
+
+    .container-fluid {
+        padding: 10px;
+    }
+
+    .logo_navbar {
+        width: 90%;
+        max-height: 90%;
+        height: 90%;
+        border-radius: 100%;
+        border: solid 1px white;
+    }
+
+    .diapositivaInicio {
+        flex-direction: column;
+    }
+
+    .tituloHighlands {
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+        font-size: 50px;
+        color: aliceblue;
+    }
+
+    .logoPortada{
+        width: 70px;
+    }
+
+    .contenedorTextoPrincipal {
+        width: 90%;
+        text-align: center;
+        align-items: center;
+        margin-top: 50px;
+        padding-left: 0;
+    }
+
+    .nav-link {
+        list-style: none;
+        color: white;
+        text-decoration: none;
+        font-family: roboto-regular;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .nav-link:hover {
+        color: rgb(136, 221, 178);
+    }
+
+    .secciones {
+        font-size: 10px;
+    }
+
+    .contenedorFotoComputadora {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0 0 0;
+        margin: 20px 0 20px 0;
+    }
+
+    .fotoCompuSola{
+        max-width: 90%;
+    }
+
+    .imgLogos{
+        max-width: 80%;
+        display: flex;
+        padding: 0 0 0 0;
+        border-radius: 20px;
+    }
+
+    .contenedorRubros {
+        grid-template-columns: repeat(1, 70%);
+        column-gap: 10%;
+        row-gap: 100px;
+        padding: 5% 0;
+    }
+
+    .rubro {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .diapositivaLogros {
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 50px;
+    }
+
+    .contenedorImgEstudiantes {
+        width: 80%;
+        max-width: 80%;
+    }
+
+    .contenedorLogros {
+        width: 100%;
+        max-width: 100%;
+        gap: 40px;
+    }
+
+    .cuadrado {
+        width: 90%;
+    }
+
+    .simbolo {
+        font-size: 40px;
+    }
+
+    .info {
+        font-size: 15px;
+        width: 80%;
+    }
+
+
+    .cardsTestimonio {
+        flex-direction: column;
+        max-width: 100%;
+        gap: 30px;
+    }
+
+
+    .contenido_footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 30px;
+        text-align: center;
+        padding: 0;
+        padding-top: 30px;
+    }
+
+    .seccionFooter {
+        width: 80%;
+        align-items: center;
+    }
+
+    .logo_footer {
+        height: 25%;
+        width: 20%;
+        max-width: 20%;
+        margin: 10px 0;
+        border-radius: 100%;
+        border: solid 1px white;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .logo_footer{
+        width: 30%;
+        max-width: 30%;
+    }
+}
