@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: roboto-regular;
     line-height: 35px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .contacto_footer {
@@ -25,6 +25,7 @@
     top: 0;
     overflow-x: hidden;
     color: white;
+    font-family: "Bree Serif", serif;
 }
 
 .contenedorLogo {
@@ -50,6 +51,7 @@
     width: 100%;
     overflow-x: hidden;
     color: white;
+    font-family: "Bree Serif", serif;
 }
 
 .logo_navbar {
@@ -61,6 +63,8 @@
 
 .secciones {
     color: white;
+    font-weight: 100;
+    font-family: "Bree Serif", serif;
 }
 
 .diapositivaInicio {
@@ -86,43 +90,47 @@
     gap: 20px;
 }
 
-.contenedorTituloConFotoSubtitulo{
+.contenedorTituloConFotoSubtitulo {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.contenedorTituloConFoto{
+.contenedorTituloConFoto {
     display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
     gap: 20px;
 }
 
 .tituloHighlands {
-    font-family: 'Dancing Script', cursive;
+    font-family: "Bree Serif", serif;
     font-weight: 700;
-    font-size: 110px;
+    font-size: 130px;
     color: aliceblue;
     text-align: center;
+    font-size: clamp(20px, 80px, 100px);
 }
 
-.logoPortada{
-    width: 150px;
+.logoPortada {
+    display: flex;
+    width: clamp(10%, 20%, 25%);
     border-radius: 100%;
     border: solid 1px white;
 }
 
 .subHighlands {
-    font-family: roboto-regular;
-    font-weight: 500;
+    font-family: "Bree Serif", serif;
     font-size: 25px;
-    color: aliceblue;
-    font-family: 'Dancing Script', cursive;
+    color: aliceblue
 }
 
 .tituloHighlandsTexto {
     color: aliceblue;
-    font-family: roboto-regular;
+    font-family: "Montserrat", sans-serif;
     line-height: 35px;
+    font-weight: 500;
     font-size: 18px;
     width: 100%;
 }
@@ -191,59 +199,123 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .tituloQueHacemos {
+        width: 80%;
+        border: none;
+        border-top: 2px solid #149968;
+        opacity: 1;
+    }
+
+    .contenedorRubros {
+        display: grid;
+        grid-template-columns: repeat(3, 20%);
+        column-gap: 10%;
+        row-gap: 100px;
+        justify-content: center;
+        padding: 9% 0;
+
+        .rubro {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            gap: 20px;
+            text-align: end;
+            font-family: "Montserrat", sans-serif;
+
+            .fotoRubro {
+                max-height: 100px;
+                height: 100px;
+            }
+
+            .infoRubro {
+                text-align: center;
+                font-size: 17px;
+                font-weight: 500;
+                margin-bottom: 0;
+            }
+        }
+    }
+
 }
 
-.tituloQueHacemos {
-    width: 80%;
-    border: none;
-    border-top: 2px solid #149968;
-    opacity: 1;
-}
 
-.contenedorRubros {
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(3, 20%);
-    column-gap: 10%;
-    row-gap: 150px;
-    justify-content: center;
-    padding: 9% 0;
-}
 
-.rubro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 8%;
-}
 
-.fotoRubro {
-    max-width: 30%;
-    width: 30%;
-}
-
-.infoRubro {
-    text-align: center;
-    font-size: 17px;
-    font-weight: 500;
-    margin-bottom: 0;
-}
 
 .diapositivaLogros {
     background-color: #149968;
     background-size: cover;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
+    flex-direction: column;
     width: 100%;
-    padding: 5% 0;
+    padding: 120px 0 150px 0;
+    gap: 50px;
+
+    .tituloLogros {
+        color: #ffff;
+        font-family: roboto;
+        width: clamp(200px, 20vw, 500px);
+        height: clamp(100px, 20vh, 250px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+
+        p {
+            font-size: clamp(50px, 5vw, 500px);
+        }
+    }
+
+    .contenedorLogros {
+        position: relative;
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+        max-width: 80%;
+
+        .cuadrado {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            width: 60%;
+            height: 200px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2);
+            color: black;
+            padding-top: 30px;
+            gap: 5px;
+            border-radius: 100px;
+
+            .simbolo {
+                position: relative;
+                color: #149968;
+                font-size: 50px;
+                font-weight: bold;
+                font-family: 'Space Grotesk', sans-serif;
+                margin-bottom: 0;
+            }
+
+            .info {
+                position: relative;
+                color: black;
+                font-size: 20px;
+                opacity: 0.8;
+                width: 80%;
+            }
+        }
+    }
 }
 
-.tituloLogros {
-    color: black;
-    font-family: roboto;
-}
 
 .contenedorImgEstudiantes {
     display: flex;
@@ -316,77 +388,35 @@ a {
 }
 
 /* for mobile */
-@media screen and (max-width: 767px) {
-    .whatsapp-icon {
-        margin-top: 10px;
-    }
 
-    .whatsapp_float {
-        width: 40px;
-        height: 40px;
-        bottom: 20px;
-        right: 10px;
-        font-size: 22px;
-    }
-}
 
 a:hover {
     color: rgb(136, 221, 178);
 }
 
 
-.contenedorLogros {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    justify-content: center;
-    align-items: center;
-    width: 45%;
-    max-width: 45%;
-}
 
-.cuadrado {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 60%;
-    height: 200px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2);
-    color: black;
-    padding-top: 10px;
-    gap: 5px;
-    border-radius: 100px;
-}
 
-.simbolo {
-    position: relative;
-    color: #149968;
-    font-size: 50px;
-    font-weight: bold;
-    font-family: 'Space Grotesk', sans-serif;
-    margin-bottom: 0;
-}
 
-.info {
-    position: relative;
-    color: black;
-    font-size: 20px;
-    opacity: 0.8;
-    width: 80%;
-}
-
-.seccionTestimonios {
+.seccionServiciosEspeciales {
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
     margin: 50px 0;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: clamp(70vw, 80vw, 90vw);
+
+        img {
+            width: 100%;
+        }
+
+    }
 }
 
 .cardsTestimonio {
@@ -529,7 +559,7 @@ footer {
     margin-top: 16px;
 }
 
-.datosPersona{
+.datosPersona {
     position: absolute;
     bottom: 0;
     color: white;
@@ -542,9 +572,9 @@ footer {
 
 /*    Tablets/Compus chicas    */
 @media screen and (max-width: 1500px) {
-    
+
     .tituloHighlands {
-        font-family: 'Dancing Script', cursive;
+        font-family: "Bree Serif", serif;
         font-weight: 700;
         font-size: 70px;
         color: aliceblue;
@@ -567,25 +597,25 @@ footer {
         margin: 20px 0 20px 0;
     }
 
-    .logoPortada{
+    .logoPortada {
         width: 90px;
     }
 
-    .tituloHighlandsTexto{
+    .tituloHighlandsTexto {
         font-size: 16px;
     }
 
-    .contenedorRubros{
+    .contenedorRubros {
         padding: 9% 50px;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 50px;
     }
 
-    .infoRubro{
+    .infoRubro {
         font-size: 16px;
     }
 
-    .cuadrado{
+    .cuadrado {
         width: 70%;
         max-width: 70%;
     }
@@ -593,33 +623,39 @@ footer {
 }
 
 @media screen and (max-width: 1300px) {
-    
-    .cuadrado{
-        width: 70%;
-        max-width: 70%;
-    }
-
-    .simbolo{
-        font-size: 40px;
-    }
-
-    .info{
-        font-size: 18px;
+    .diapositivaLogros {
+        .contenedorLogros {
+            .cuadrado {
+                .info {
+                    font-size: 16px;
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .card{
+    .card {
         width: 300px;
         height: auto;
     }
 
-    .datosPersona{
+    .datosPersona {
         font-size: 15px;
     }
 
-    .cardsTestimonio{
+    .cardsTestimonio {
         max-width: 90%;
+    }
+
+    .diapositivaLogros {
+        .contenedorLogros {
+            .cuadrado {
+                .info {
+                    font-size: 14px;
+                }
+            }
+        }
     }
 }
 
@@ -649,7 +685,7 @@ footer {
         color: white;
     }
 
-    .navbar-inicio{
+    .navbar-inicio {
         color: white;
     }
 
@@ -676,7 +712,7 @@ footer {
         color: aliceblue;
     }
 
-    .logoPortada{
+    .logoPortada {
         width: 70px;
     }
 
@@ -716,11 +752,11 @@ footer {
         margin: 20px 0 20px 0;
     }
 
-    .fotoCompuSola{
+    .fotoCompuSola {
         max-width: 90%;
     }
 
-    .imgLogos{
+    .imgLogos {
         max-width: 80%;
         display: flex;
         padding: 0 0 0 0;
@@ -740,35 +776,28 @@ footer {
     }
 
     .diapositivaLogros {
-        flex-direction: column;
-        gap: 50px;
-        padding-top: 50px;
+        .contenedorLogros {
+            width: 100%;
+            max-width: 100%;
+            gap: 40px;
+            flex-direction: column;
+            .cuadrado {
+                max-width: 80%;
+                height: 180px;
+                .simbolo {
+                    font-size: 40px;
+                }
+                .info {
+                    font-size: 20px;
+                }
+            }
+        }
     }
 
     .contenedorImgEstudiantes {
         width: 80%;
         max-width: 80%;
     }
-
-    .contenedorLogros {
-        width: 100%;
-        max-width: 100%;
-        gap: 40px;
-    }
-
-    .cuadrado {
-        width: 90%;
-    }
-
-    .simbolo {
-        font-size: 40px;
-    }
-
-    .info {
-        font-size: 15px;
-        width: 80%;
-    }
-
 
     .cardsTestimonio {
         flex-direction: column;
@@ -805,8 +834,37 @@ footer {
 }
 
 @media screen and (max-width: 400px) {
-    .logo_footer{
+    .logo_footer {
         width: 30%;
         max-width: 30%;
     }
+}
+
+@media screen and (max-width: 767px) {
+    .whatsapp-icon {
+        margin-top: 10px;
+    }
+
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+
+    .diapositivaLogros {
+        .contenedorLogros {
+            .cuadrado {
+                height: 200px;
+                .simbolo {
+                    font-size: 40px;
+                }
+                .info {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
 }
