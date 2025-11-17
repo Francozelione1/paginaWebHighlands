@@ -13,7 +13,7 @@ function ajustarContenido() {
     else {
       document.getElementById("fotoCompu").innerHTML = 
       `
-      <img class="fotoComputadora" src="../fotosComponente/imgCompu.svg" alt="">
+      <img class="fotoComputadora" src="../fotosComponente/imgCompu.png" alt="">
       `
     }
 }

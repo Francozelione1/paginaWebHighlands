@@ -1,8 +1,88 @@
-p{
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+p {
     margin-bottom: 0;
 }
 
-.mainCursos{
+.mainCursos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 80px;
+
+    .seccionMasInformacion {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        max-width: 80%;
+        align-items: center;
+        background-color: white;
+        background-size: cover;
+        padding: 150px 0 50px 0;
+        gap: 20px;
+
+        .tituloNuestrosCursos {
+            color: black;
+            font-family: "Bree Serif", serif;
+            font-size: 40px;
+        }
+
+        p {
+            font-weight: 400;
+        }
+    }
+
+    .seccionCursos {
+        display: flex;
+        flex-direction: column;
+        gap: 150px;
+        width: 100%;
+
+        .curso {
+            display: flex;
+            width: 100%;
+
+            .contenedorImgCurso {
+                width: 50%;
+
+                .imgCurso {
+                    object-fit: cover;
+                    width: 90%;
+                    height: 60vh;
+                    border-radius: 10px;
+                }
+            }
+
+            .contenedorInfoCurso {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+                gap: 20px;
+
+                h3 {
+                    font-family: "Bree Serif", serif;
+                }
+
+                .infoCurso {
+                    text-align: justify;
+                    width: 90%;
+                    font-family: "Montserrat", sans-serif;
+                }
+            }
+        }
+    }
+}
+
+.contenedorCursos {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -11,49 +91,19 @@ p{
     text-align: center;
 }
 
-.seccionMasInformacion{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-    max-width: 80%;
-    align-items: center;
-    background-color: white;
-    background-size: cover;
-    padding: 150px 0 50px 0;
-    gap: 20px;
-}
-
-.tituloNuestrosCursos{
-    color: black;
-    font-family: roboto-regular;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.contenedorCursos{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.fotoCurso{
-    min-width:5%;
+.fotoCurso {
+    min-width: 5%;
     width: 8%;
     max-width: 10%;
     padding-top: 10px;
 }
 
-.fotoCursoAcelerado{
+.fotoCursoAcelerado {
     width: 15%;
     max-width: 20%;
 }
 
-.contenedorCurso{
+.contenedorCurso {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -61,10 +111,10 @@ p{
     align-items: center;
     gap: 20px;
     text-align: center;
-   
+
 }
 
-.contenedorPortadaCurso{
+.contenedorPortadaCurso {
     display: flex;
     width: 100%;
     background: linear-gradient(to right, rgb(140, 236, 216) 0%, rgb(78, 233, 148) 100%);
@@ -75,7 +125,7 @@ p{
     align-items: center;
     padding: 10px 0 0 0;
     font-size: 25px;
-    
+
 }
 
 .whatsapp_float {
@@ -91,30 +141,17 @@ p{
     font-size: 30px;
     box-shadow: 2px 2px 3px #999;
     z-index: 100;
-  }
-  .whatsapp-icon {
+}
+
+.whatsapp-icon {
     margin-top: 16px;
-  }
+}
 
-  /* for mobile */
-  @media screen and (max-width: 767px){
-    .whatsapp-icon {
-      margin-top: 10px;
-    }
-    .whatsapp_float {
-      width: 40px;
-      height: 40px;
-      bottom: 20px;
-      right: 10px;
-      font-size: 22px;
-    }
-  }
-
-a{
+a {
     list-style: none;
     color: black;
     text-decoration: none;
-    font-family: roboto-regular;
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 20px;
 }
@@ -125,7 +162,7 @@ a{
     max-width: 80%;
 }
 
-.contenedorInfoCurso{
+.contenedorInfoCurso {
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -133,40 +170,121 @@ a{
     padding: 20px 10px;
 }
 
-.contenedorInfoCurso hr{
+.contenedorInfoCurso hr {
     border-top: 2px solid rgb(14, 131, 63);
 }
 
+@media screen and (max-width: 1350px) {
+    .mainCursos {
+        .seccionCursos {
+            .curso {
+                .contenedorInfoCurso {
+                    .infoCurso {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 990px) {
-    
-    .fotoCursoAcelerado{
+
+    .fotoCursoAcelerado {
         width: 20%;
         max-width: 30%;
     }
 
-    .fotoCurso{
+    .fotoCurso {
         width: 15%;
         max-width: 20%;
     }
-   
-    .contenedorPortadaCurso{
+
+    .contenedorPortadaCurso {
         font-size: 25px;
         gap: 10px;
     }
 
-}
+    .mainCursos {
 
-@media  screen and (max-width: 500px) {
+        .seccionCursos {
+            gap: 100px;
 
-    #primerCurso {
-        margin-top: 3rem;
-        text-align: center;
-        max-width: 80%;
-        font-size: 35px;
+            .curso {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+
+                .contenedorImgCurso {
+                    min-width: 90%;
+
+                    .imgCurso {
+                        width: 100%;
+                    }
+                }
+
+                .contenedorInfoCurso {
+                    min-width: 90%;
+
+                    .infoCurso {
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 
-    .contenedorPortadaCurso{
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+    .whatsapp-icon {
+        margin-top: 10px;
+    }
+
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
         font-size: 22px;
-        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mainCursos {
+        .seccionMasInformacion {
+            .tituloNuestrosCursos {
+                margin-top: 3rem;
+                text-align: center;
+                max-width: 80%;
+                font-size: 25px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+
+        .seccionCursos {
+            .curso {
+                .contenedorImgCurso {
+                    min-width: 90%;
+
+                    .imgCurso {
+                        width: 100%;
+                        height: 40vh;
+                    }
+                }
+                .contenedorInfoCurso {
+                    min-width: 90%;
+
+                    .infoCurso {
+                        font-size: 13px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }

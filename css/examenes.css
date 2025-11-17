@@ -1,65 +1,141 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-p{
-    font-family: roboto-regular;
-}
-
-html {
-    scroll-behavior: smooth; /* Ajusta según tus necesidades */
-}
-
-img{
-    max-width: 100%;
-    height: 100%;
-    font-family: roboto-regular ;
-}
-
-main{
+main {
     margin-top: 11%;
+    margin-bottom: 150px;
+
+    .contenedorTablas {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .tituloExamenes {
+            width: 90%;
+            .tituloExamenesInternacionales {
+                text-align: center;
+                font-size: 40px;
+                font-weight: 500;
+                font-family: "Bree Serif", serif;
+            }
+        }
+
+        .infoAperturaExamenes {
+            color: black;
+            font-size: 18px;
+            text-align: center;
+            max-width: 80%;
+        }
+
+    }
+
+    .seccionExamenes {
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(4, 0.5fr);
+        column-gap: 20px;
+        background-color: #07705b;
+        padding: 5% 20px;
+        margin-top: 50px;
+        width: 100%;
+        background-size: cover;
+
+        .columnasExamenes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            width: 100%;
+            height: 600px;
+
+            .card {
+                background-size: cover;
+                height: 70%;
+                width: 95%;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                position: relative;
+                transform-style: preserve-3d;
+                transition: transform 0.5s;
+                perspective: 1000px;
+                background-color: #149968;
+
+                .card-face {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    backface-visibility: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
+                    border-radius: 10px;
+
+                    p {
+                        font-family: "Montserrat", sans-serif;
+                        font-weight: 500;
+                    }
+
+                    .logoExamen {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                    }
+
+                    .rotateButton {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        margin: 20px 20px 0 0;
+                        width: 10%;
+                        height: 30px;
+                    }
+                }
+
+                .front {
+                    background-color: #fff;
+                }
+
+                .back {
+                    background-color: #d65f5f;
+                    color: #fff;
+                    transform: rotateY(180deg);
+                    border: 2px solid white;
+                    text-align: center;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+
+    .seccionBotonTest {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+    }
 }
 
-.logo_navbar{
-    max-width: 100%;
-    width: 100%;
-}
-
-a{
-    list-style: none;
-    color: black;
-    text-decoration: none;
-    font-family: roboto-regular;
-    font-weight: 600;
-    font-size: 20px;
-}
-
-.contenedorTablas{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    margin-top: 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-.tituloExamenes{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 500;
-}
-
-.contenedorImgExamenes{
+.contenedorImgExamenes {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
     border-radius: 10px;
 }
-.contenedoresImgExamenes{
+
+.contenedoresImgExamenes {
     box-shadow: 5px 5px 20px 0px black;
     background-color: #f7efea;
     border-radius: 10px;
@@ -68,70 +144,47 @@ a{
     padding: 20px;
     height: 100%;
 }
-.imgExamenes{
+
+.imgExamenes {
     height: 100%;
     border-radius: 10px;
 }
 
 .whatsapp_float {
-      position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 40px;
-      right: 40px;
-      background-color: #25d366;
-      color: #fff;
-      border-radius: 50px;
-      text-align: center;
-      font-size: 30px;
-      box-shadow: 2px 2px 3px #999;
-      z-index: 100;
-    }
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 16px;
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
     .whatsapp-icon {
-      margin-top: 16px;
+        margin-top: 10px;
     }
 
-    /* for mobile */
-    @media screen and (max-width: 767px){
-      .whatsapp-icon {
-        margin-top: 10px;
-      }
-      .whatsapp_float {
+    .whatsapp_float {
         width: 40px;
         height: 40px;
         bottom: 20px;
         right: 10px;
         font-size: 22px;
-      }
     }
-
-main{
-    margin-bottom: 150px;
 }
 
-.seccionExamenes{
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(4, 0.5fr);
-    column-gap: 20px;
-    background-color: #149968;
-    padding: 5% 20px;
-    margin-top: 50px;
-    width: 100%;
-    background-size: cover;
-}
-
-.columnasExamenes{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    width: 100%;
-    height: 600px;
-}
-
-.contenedoresExamenes{
+.contenedoresExamenes {
     background-color: aquamarine;
     background-size: cover;
     height: 50%;
@@ -144,7 +197,7 @@ main{
     position: relative;
 }
 
-.botonVerMas{
+.botonVerMas {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,77 +205,22 @@ main{
     position: absolute;
     top: 10;
     right: 10;
-    background-color: aquamarine;
+    background-color: #07705b;
     border: none;
     font-size: 40px;
     color: black;
     font-weight: bold;
 }
 
-.card {
-    background-size: cover;
-    height: 70%;
-    width: 95%;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
-    perspective: 1000px;
-    background-color: #149968;
-}
 
-.card-face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
-    border-radius: 10px;
-}
 
-.front {
-    background-color: #fff;
-}
-
-.back {
-    background-color: #d65f5f;
-    color: #fff;
-    transform: rotateY(180deg);
-    border: 2px solid white;
-    text-align: center;
-    padding: 0 10px;
-}
-
-.back p{
+.back p {
     margin-bottom: 0;
     margin-top: 3rem;
 }
 
-.logoExamen{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
 
-.rotateButton{
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 20px 20px 0 0;
-    width: 10%;
-    height: 30px;
-}
-
-.rotateButtonBack{
+.rotateButtonBack {
     position: absolute;
     top: 0;
     left: 0;
@@ -249,7 +247,7 @@ main{
 
 button {
     padding: 10px 20px;
-    background-color: #4caf50;
+    background-color: #07705b;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -280,76 +278,71 @@ button:hover {
 }
 
 
-.imagenFlecha{
+.imagenFlecha {
     width: 100%;
     height: 100%;
 }
 
-.infoAperturaExamenes{
-    color: black;
-    font-size: 18px;
-    text-align: center;
-    max-width: 80%;
-}
 
-.miBoton{
+.miBoton {
     padding: 10px 20px;
     background-color: #5ebe61;
 }
 
-.botonRealizarTestNivelIngles{
+.botonRealizarTestNivelIngles {
     padding: 15px 20px;
-    background-color: #149968;
+    background-color: #07705b;
     border-radius: 10px;
     background-size: cover;
     text-align: center;
-    /*font-family: roboto-regular;*/
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
 }
 
-.botonRealizarTestNivelIngles:hover{
-   color: black;
-   opacity: 0.8;
+.botonRealizarTestNivelIngles:hover {
+    color: black;
+    opacity: 0.8;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.seccionBotonTest{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px;
-}
 
 
 @media screen and (max-width: 990px) {
-    
-    .contenedorTablas{
-        padding-top: 80px;
-    }
-    
-    .seccionExamenes{
-        grid-template-columns: repeat(1, 1fr);
-        column-gap: 20px;
-        row-gap: 30px;
-        padding: 80px 0;
-    }
-    
-    .card {
-        width: 45%;
-    }
 
-    .tituloExamenes{
-        max-width: 80%;
+    main {
+        .contenedorTablas {
+            padding-top: 80px;
+        }
+
+        .seccionExamenes {
+            grid-template-columns: repeat(1, 1fr);
+            column-gap: 20px;
+            row-gap: 30px;
+            padding: 80px 0;
+
+            .columnasExamenes {
+                .card {
+                    width: 45%;
+
+                    .card-face {
+                        p {
+                            font-family: "Montserrat", sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+
+        .tituloExamenes {
+            max-width: 80%;
+        }
+
     }
-    
 }
 
 @media screen and (max-width: 600px) {
@@ -359,9 +352,9 @@ main{
 }
 
 @media screen and (min-width: 1500px) {
-    
+
     .card {
         width: 80%;
     }
-    
+
 }
